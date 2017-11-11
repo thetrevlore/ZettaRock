@@ -1,0 +1,16 @@
+{
+  "name": "ZettaRock",
+  "version": "1.0.0",
+  "description": "This is your Chrome extension which replaces a word or phrase with a different word or phrase.",
+  "main": "content.js",
+  "dependencies": {
+    "@google-cloud/translate": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
