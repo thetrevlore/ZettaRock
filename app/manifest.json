@@ -3,16 +3,12 @@
     "name": "Zetta Rock",
     "description": "Learn a new language through text replacement!",
     "version": "1.0",
-    "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "./scripts/require.js",
-                "./scripts/content.js"
-            ],
-            "run_at": "document_end"
-        }
-    ]
+    "permissions": ["https://translation.googleapis.com/", "activeTab"],
+    "browser_action": {
+        "default_title": "Zetta Rock"
+    },
+    "background": {
+        "scripts": ["/scripts/background.js"],
+        "persistent": true
+    }
 }
