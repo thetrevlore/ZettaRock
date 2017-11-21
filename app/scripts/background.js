@@ -1,7 +1,7 @@
 
 chrome.browserAction.onClicked.addListener((tab) => {
 
-  chrome.tabs.executeScript(tab.id, { file: '/scripts/scrapeContentScript.js'}, _=>{
+  chrome.tabs.executeScript(tab.id, { file: '/scripts/scrape.js'}, _=>{
     if(chrome.runtime.lastError !== undefined){
       console.log(_, e);
     }
